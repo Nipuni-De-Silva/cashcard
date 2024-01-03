@@ -12,10 +12,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/cashcards")
 class CashCardController {
-
     private final CashCardRepository cashCardRepository;
 
-    private CashCardController(CashCardRepository cashCardRepository){
+    private CashCardController(CashCardRepository cashCardRepository) {
         this.cashCardRepository = cashCardRepository;
     }
 
@@ -28,5 +27,4 @@ class CashCardController {
             return ResponseEntity.notFound().build();
         }
     }
-
 }
